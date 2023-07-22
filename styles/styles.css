@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&family=Raleway:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*TITULOS GENERAL*/ 
+
+h1 {
+    color: #46458C;
+    font-family: 'Federant', cursive;
+    font-size: 42px;
+    text-align: center;
+    padding: 10px; 
+}
+
+h2 {
+    color: #46458C;
+    font-family: 'Federant', cursive;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px; 
+}
+
+h3 {
+    color: #46458C;
+    font-family: 'Federant', cursive;
+    font-size: 28px;
+    padding: 10px; 
+}
+
+h4 {
+    color: #090580;
+    font-family: 'Federant', cursive;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: justify;
+}
+
+/* HEADER */
+
+header {
+    background-color: #ffe2d8;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-collapse {
+    align-items: end;
+}
+
+.navbar-nav {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-nav li a {
+    color: #090580;
+}
+
+.navbar-nav li a:hover {
+    color: #e8a9a9;
+    transition: all 1s;
+}
+
+/* MAIN */
+
+.banner { 
+    display: flex;
+    background-color: #ffe2d8;
+    height: 100vh;
+    background-image: url("../images/fondo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 100px;
+    padding-left: 90px;
+}
+
+.gatobanner {
+    width: 100%;
+}
+
+.bannerdiv {
+    display: flex;
+    flex-direction: column;
+    font-size: 120%;
+    text-align: justify;
+    width: 50%;
+}
+
+.ban1 {
+    width: 100%;
+}
+
+.ban2 {
+    padding-left: 20px;
+}
+
+/* Quienes somos */
+
+.quienes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.quienes_imagen {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.quienesSomos {
+    width: 30%;
+    padding: 10px; 
+}
+
+.quienesSomos p {
+    text-align: justify; 
+    padding: 5px;
+}
+
+/* SECCIONES */
+
+.secciones {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    background-color: #ffe2d8;
+    padding: 50px 150px ;
+    text-align: center;
+}
+
+.secciones_article {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.secciones_fotos {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.verMas {
+    color: #441444;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0.5rem;
+}
+
+.secciones_parrafo {
+    font-size: 90%;
+    padding: 0.5rem;
+}
+
+.secciones_boton {
+    background-color: #e8a9a9;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: #441444;
+    margin-inline: 4rem;
+    margin-bottom: 1rem;
+}
+
+/* CATFEST */ 
+
+.fest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 10rem 3rem 7rem;
+}
+
+.catfest {
+    text-align: center;
+    width: 50%;
+}
+
+.catfest p {
+    padding: 0px 50px 0px 50px;
+}
+
+.botonCatfest {
+    padding: 10px;
+    border-radius: 20px;
+    border-style:groove;
+    border-color: #441444;
+    background-color: #e8a9a9;
+}
+
+.video {
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #cec9c9;
+    background-image: url("../images/cat_background.png");
+    background-size: contain;
+    padding: 20px;
+}
+
+.footer_info {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.derechos {
+    display: flex;
+    flex-direction: column;
+}
+
+.adoptar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adoptarlist {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.developed p {
+    justify-content: center;
+    text-align: center;
+
+}
+
+/*ADOPTA UN MICHI*/
+
+.mainpages {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.mains {
+    margin-inline: 20px; 
+    padding: 70px 90px 40px 90px;
+}
+
+.contenedor_gatitos {
+    display: grid;
+    width: 100%;
+    padding-top: 2rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "caja1  caja1   caja2   caja7"
+    "caja4  caja5   caja6   caja8"
+    "caja3  caja9   caja10  caja10";
+}
+
+.contenedormaster {
+    place-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.contenedor_gatitos > article {
+    border: solid 1px pink;
+    border-radius: 20px;
+}
+
+.contenedor1 {
+    grid-area: caja1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor2 {
+    grid-area: caja2;
+}
+
+.contenedor3 {
+    grid-area: caja3;
+}
+
+.contenedor4 {
+    grid-area: caja4;
+}
+
+.contenedor5 {
+    grid-area: caja5;
+}
+
+.contenedor6 {
+    grid-area: caja6;
+}
+
+.contenedor7 {
+    grid-area: caja7;
+}
+
+.contenedor8 {
+    grid-area: caja8;
+}
+
+.contenedor9 { 
+    grid-area: caja9;
+}
+
+.contenedor10 {
+    grid-area: caja10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagencontenedor {
+    width: 100%;
+}
+
+.imagengatoalto {
+    width: 90%;
+}
+
+.listas {
+    padding-right: 1.5rem;
+}
+
+.listas li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.adoptados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adoptados2 {
+    gap: 1rem;
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.adoptados2 img {
+    border-radius: 20px;
+    width: 200px;
+}
+
+/* REFUGIOS */
+
+.contenedor_refugios {
+    display: grid;
+    width: 100%;
+    padding: 0 0rem 3rem 0rem;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "refu1  refu2   refu3"
+    "refu4  refu5   refu6";
+}
+
+.contenedor_refugios div {
+    background-color: #ffe2d8;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.contenedor_refugios a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_refugios a img {
+    width: 70%;
+}
+
+.refu1 {
+    grid-area: refu1;
+}
+
+.refu2 {
+    grid-area: refu2;
+}
+
+.refu3 {
+    grid-area: refu3;
+}
+
+.refu4 {
+    grid-area: refu4;
+}
+
+.refu5 {
+    grid-area: refu5;
+}
+
+.refu6 {
+    grid-area: refu6;
+}
+
+/* CAFES DE GATOS */
+
+.cafesdegatos {
+    display: flex;
+    gap: 2rem;
+    padding-block: 2rem;
+    width: 100%;
+}
+
+.cafes {
+    padding: 1rem;
+}
+
+.fotoscafes img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.textocafes {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.textocafes ul {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.textocafes a {
+    text-decoration: none;
+    color: #bd8888;
+    font-weight: 600;
+}
+
+.veni {
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ".  prueba1   prueba2";
+}
+
+.veni p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #46458C;
+}
+.veni1 {
+    grid-area: prueba1;
+    place-items: center;
+    align-items: center;
+}
+
+.veni2 {
+    grid-area: prueba2;
+    width: 100%;
+}
+
+/* CONTACTANOS */
+
+.formulario {
+    margin: 0rem 8rem 1rem 8rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: #ffe2d8;
+    padding: 2rem;
+    border-radius: 20px;
+    border: solid 1px #441444;
+}
+
+.formulario button {
+    color: #441444;
+    font-weight: 500;
+    margin: 0.5rem;
+}
+
+.formulario button:hover {
+    background-color:#46458C;
+    color: white;
+    border-color: #441444;
+}
+
+.curioso {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.curioso img {
+    width: 30%;
+}
+
+@media screen and (max-width: 1192px ) {
+
+    .banner {
+        height: 80vh;
+        background-position: bottom;
+    }
+
+    .bannerdiv { 
+        width: 45%;
+    }
+
+    .ban2 {
+        width: 100%;
+    }
+
+    .quienesSomos {
+        width: 35%;
+    }
+
+    .secciones {
+        padding: 40px 100px;
+    }
+
+    .fest {
+        margin: 3rem 7rem 3rem 4rem;
+    }
+
+    .contenedor_gatitos {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "caja1  caja1   caja2"
+        "caja7  caja4   caja5"
+        "caja6  caja8   caja3"
+        "caja9  caja10  caja10";
+    }
+}
+
+@media screen and (max-width: 991px ) {
+
+    .banner {
+        height: 70vh;
+        background-position: bottom;
+        padding-top: 80px;
+    }
+
+    .bannerdiv {
+        width: 48%;
+    }
+
+    .ban2 {
+        padding-left: 15px;
+    }
+
+    .quienesSomos {
+        width: 43%;
+    }
+
+    .secciones {
+        flex-direction: column;
+        padding-inline: 40px;
+    }
+
+    .secciones_article {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .art1 { 
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .fest {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .catfest {
+        width: 80%;
+    }
+
+    .video {
+        width: 75%;
+        margin-bottom: 1rem;
+    }
+
+    .contenedor_gatitos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "caja1  caja1"
+        "caja2  caja7"
+        "caja4  caja5"
+        "caja6  caja8"
+        "caja3  caja9"
+        "caja10 caja10";
+    }
+
+}
+
+@media screen and (max-width: 695px ) {
+
+    .banner {
+        height: 65vh;
+        background-image: url("../images/fondo1.png");
+        padding-left: 30px;
+        padding-top: 70px;
+        justify-content: left;
+        background-position: bottom;
+    }
+
+    .bannerdiv { 
+        width: 70%;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+    
+    .ban2 {
+        padding-left: 10px;
+        width: 70%;
+    }
+
+    .bannerdiv p {
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    } 
+
+    .mains {
+        padding: 70px 60px 40px 60px;
+    }
+
+    .quienes {
+        flex-direction: column-reverse;
+    }
+
+    .quienesSomos {
+        width: 70%;
+    }
+
+    .secciones {
+        padding-inline: 60px;
+    }
+
+    .secciones_article {
+        flex-direction: column;
+    }
+
+    .art1 { 
+        width: 100%;
+    }
+
+    .catfest {
+        width: 100%;
+    }
+
+    .video {
+        width: 80%;
+    }
+
+    .contenedor_gatitos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adoptados2 img {
+        width: 250px
+    }
+
+    .adoptarlist {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 474px ) {
+       
+    .banner {
+        height: 60vh;
+        background-position: bottom;
+    }
+
+    .bannerdiv { 
+        width: 80%;
+    }
+
+    .bannerdiv p {
+        font-size: 70%;
+    }
+
+    .ban2 {
+        padding-left: 10px;
+        width: 80%;
+    }
+
+    .quienesSomos {
+        width: 85%;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    } 
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .secciones {
+        padding-inline: 30px;
+    }
+
+    .mains {
+        padding: 70px 20px 40px 20px;
+    }
+
+}
