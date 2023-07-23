@@ -11,37 +11,37 @@
 h1 {
     color: #46458C;
     font-family: 'Federant', cursive;
-    font-size: 42px;
+    font-size: 2.63rem;
     text-align: center;
-    padding: 10px; 
+    padding: 0.6rem; 
 }
 
 h2 {
     color: #46458C;
     font-family: 'Federant', cursive;
-    font-size: 36px;
+    font-size: 2.25rem;
     text-align: center;
-    padding: 10px; 
+    padding: 0.6rem; 
 }
 
 h3 {
     color: #46458C;
     font-family: 'Federant', cursive;
-    font-size: 28px;
-    padding: 10px; 
+    font-size: 1.75rem;
+    padding: 0.6rem; 
 }
 
 h4 {
     color: #090580;
     font-family: 'Federant', cursive;
-    font-size: 1.4rem;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 1.5rem;
     text-align: justify;
 }
 
@@ -81,8 +81,8 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-top: 100px;
-    padding-left: 90px;
+    padding-top: 6.25rem;
+    padding-left: 5.62rem;
 }
 
 .gatobanner {
@@ -102,7 +102,7 @@ header {
 }
 
 .ban2 {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 /* Quienes somos */
@@ -111,23 +111,23 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .quienes_imagen {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .quienesSomos {
     width: 30%;
-    padding: 10px; 
+    padding: 0.6rem; 
 }
 
 .quienesSomos p {
     text-align: justify; 
-    padding: 5px;
+    padding: 0.3rem;
 }
 
 /* SECCIONES */
@@ -137,7 +137,7 @@ header {
     width: 100%;
     gap: 1rem;
     background-color: #ffe2d8;
-    padding: 50px 150px ;
+    padding: 3.1rem 9.38rem ;
     text-align: center;
 }
 
@@ -151,7 +151,7 @@ header {
 
 .secciones_fotos {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .verMas {
@@ -168,8 +168,8 @@ header {
 
 .secciones_boton {
     background-color: #e8a9a9;
-    padding: 10px 10px;
-    border-radius: 20px;
+    padding: 0.6rem;
+    border-radius: 1.25rem;
     border-style: groove;
     border-color: #441444;
     margin-inline: 4rem;
@@ -191,19 +191,19 @@ header {
 }
 
 .catfest p {
-    padding: 0px 50px 0px 50px;
+    padding: 0 3.12rem 0 3.12rem;
 }
 
 .botonCatfest {
-    padding: 10px;
-    border-radius: 20px;
+    padding: 0.6rem;
+    border-radius: 1.25rem;
     border-style:groove;
     border-color: #441444;
     background-color: #e8a9a9;
 }
 
 .video {
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
     width: 60%;
 }
@@ -214,7 +214,7 @@ header {
     background-color: #cec9c9;
     background-image: url("../images/cat_background.png");
     background-size: contain;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .footer_info {
@@ -244,7 +244,6 @@ header {
 .developed p {
     justify-content: center;
     text-align: center;
-
 }
 
 /*ADOPTA UN MICHI*/
@@ -258,8 +257,8 @@ header {
 }
 
 .mains {
-    margin-inline: 20px; 
-    padding: 70px 90px 40px 90px;
+    margin-inline: 1.25rem; 
+    padding: 4.38rem 5.63rem 2.5rem 5.63rem;
 }
 
 .contenedor_gatitos {
@@ -285,7 +284,7 @@ header {
 
 .contenedor_gatitos > article {
     border: solid 1px pink;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .contenedor1 {
@@ -370,7 +369,7 @@ header {
 }
 
 .adoptados2 img {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     width: 200px;
 }
 
@@ -391,7 +390,7 @@ header {
 .contenedor_refugios div {
     background-color: #ffe2d8;
     padding: 1rem;
-    border-radius: 30px;
+    border-radius: 1.87rem;
 }
 
 .contenedor_refugios a {
@@ -443,7 +442,7 @@ header {
 
 .fotoscafes img {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 1.87rem;
 }
 
 .textocafes {
@@ -503,7 +502,7 @@ header {
     font-weight: 400;
     background-color: #ffe2d8;
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: solid 1px #441444;
 }
 
@@ -550,7 +549,7 @@ header {
     }
 
     .secciones {
-        padding: 40px 100px;
+        padding: 2.5rem 6.25rem;
     }
 
     .fest {
@@ -573,7 +572,7 @@ header {
     .banner {
         height: 70vh;
         background-position: bottom;
-        padding-top: 80px;
+        padding-top: 5rem;
     }
 
     .bannerdiv {
@@ -581,7 +580,7 @@ header {
     }
 
     .ban2 {
-        padding-left: 15px;
+        padding-left: 1rem;
     }
 
     .quienesSomos {
@@ -590,7 +589,7 @@ header {
 
     .secciones {
         flex-direction: column;
-        padding-inline: 40px;
+        padding-inline: 2.5rem;
     }
 
     .secciones_article {
@@ -625,7 +624,7 @@ header {
 
     .contenedor_gatitos {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "caja1  caja1"
         "caja2  caja7"
@@ -642,8 +641,8 @@ header {
     .banner {
         height: 65vh;
         background-image: url("../images/fondo1.png");
-        padding-left: 30px;
-        padding-top: 70px;
+        padding-left: 1.87rem;
+        padding-top: 4.38rem;
         justify-content: left;
         background-position: bottom;
     }
@@ -657,7 +656,7 @@ header {
     }
     
     .ban2 {
-        padding-left: 10px;
+        padding-left: 0.6rem;
         width: 70%;
     }
 
@@ -670,7 +669,7 @@ header {
     } 
 
     .mains {
-        padding: 70px 60px 40px 60px;
+        padding: 4.37rem 3.75rem 2.5rem 3.75rem;
     }
 
     .quienes {
@@ -682,7 +681,7 @@ header {
     }
 
     .secciones {
-        padding-inline: 60px;
+        padding-inline: 3.75rem;
     }
 
     .secciones_article {
@@ -693,12 +692,16 @@ header {
         width: 100%;
     }
 
+    .fest {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
     .catfest {
         width: 100%;
     }
 
     .video {
-        width: 80%;
+        width: 95%;
     }
 
     .contenedor_gatitos {
@@ -707,7 +710,7 @@ header {
     }
 
     .adoptados2 img {
-        width: 250px
+        width: 15.65rem
     }
 
     .adoptarlist {
@@ -738,7 +741,7 @@ header {
     }
 
     .ban2 {
-        padding-left: 10px;
+        padding-left: 0.6rem;
         width: 80%;
     }
 
@@ -759,7 +762,7 @@ header {
     }
 
     .mains {
-        padding: 70px 20px 40px 20px;
+        padding: 4.38rem 1.25rem 2.5rem 1.25rem;
     }
 
 }
