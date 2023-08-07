@@ -260,7 +260,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
 }
 @media screen and (max-width: 991px) {
   header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
-    animation-delay: 0s;
+    animation: none;
   }
 }
 header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item a {

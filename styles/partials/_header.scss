@@ -20,7 +20,7 @@ header {
                         animation-delay: 0.6s;
 
                         @include mediaquery (991px) {
-                            animation-delay: 0s;
+                            animation: none;
                         }
 
                         a {
