@@ -277,7 +277,6 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
 .bann {
   background-color: #ffe2d8;
   display: flex;
-  height: 100vh;
 }
 .bann .banner {
   background-image: url("../images/fondo2.png");
@@ -287,6 +286,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
   padding-top: 6.25rem;
   padding-left: 5.62rem;
   animation: puff-in-center 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  height: 100vh;
 }
 @media screen and (max-width: 991px) {
   .bann .banner {
@@ -302,13 +302,11 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
     padding-left: 1.87rem;
     padding-top: 4.38rem;
     justify-content: left;
-    background-position: bottom;
   }
 }
 @media screen and (max-width: 474px) {
   .bann .banner {
     height: 60vh;
-    background-position: bottom;
   }
 }
 .bann .banner .bannerdiv {
@@ -363,6 +361,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
   .bann .banner .bannerdiv .ban2 {
     padding-left: 0.6rem;
     width: 70%;
+    animation: none;
   }
 }
 @media screen and (max-width: 474px) {

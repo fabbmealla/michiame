@@ -1,7 +1,6 @@
 .bann {
     background-color:$mainPinkColor;
     display: flex;
-    height: 100vh;
 
     .banner { 
         background-image: url("../images/fondo2.png");
@@ -12,6 +11,7 @@
         padding-left: 5.62rem;
         -webkit-animation:puff-in-center 1s cubic-bezier(.47,0.000,.745,.715) both;
         animation:puff-in-center 1s cubic-bezier(.47,0.000,.745,.715) both;
+        height: 100vh;
 
         @include mediaquery (991px) {
             height: 70vh;
@@ -25,12 +25,10 @@
             padding-left: 1.87rem;
             padding-top: 4.38rem;
             justify-content: left;
-            background-position: bottom;
         }
 
         @include mediaquery (474px) {
             height: 60vh;
-            background-position: bottom;
         }
 
         .bannerdiv {
@@ -80,6 +78,7 @@
                 @include mediaquery (695px) {
                     padding-left: 0.6rem;
                     width: 70%;
+                    animation: none;
                 }
 
                 @include mediaquery (474px) {
