@@ -1,0 +1,108 @@
+.container {
+
+    .contenedor_refugios {
+        display: grid;
+        width: 100%;
+        padding: 0 0 2rem 0;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "refu1  refu2   refu3"
+        "refu4  refu5   refu6";
+
+        @include mediaquery (991px) {
+            gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "refu1  refu2"
+            "refu3  refu4"
+            "refu5  refu6";
+        }
+
+        @include mediaquery (474px) {
+            padding: 0 0 1Rem 0;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "refu1"
+            "refu2"
+            "refu3"
+            "refu4"
+            "refu5"
+            "refu6";
+        }
+
+        .refu {
+            place-items: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            -webkit-animation:slide-in-blurred-bottom 1s cubic-bezier(.23,1.000,.32,1.000) both;
+            animation:slide-in-blurred-bottom 1s cubic-bezier(.23,1.000,.32,1.000) both
+        }
+
+        @for $item from 1 through 6 {
+
+            .refu#{$item} {
+            animation-delay: $item*0.5s;
+            }
+        }
+
+        .refu1 {
+            grid-area: refu1;
+        }
+        
+        .refu2 {
+            grid-area: refu2;
+        }
+        
+        .refu3 {
+            grid-area: refu3;
+        }
+        
+        .refu4 {
+            grid-area: refu4;
+        }
+        
+        .refu5 {
+            grid-area: refu5;
+        }
+        
+        .refu6 {
+            grid-area: refu6;
+        }
+
+        div {
+            background: rgb(255,226,216);
+            background: linear-gradient(146deg, rgba(255,226,216,1) 0%, rgba(232,169,169,1) 100%); 
+            padding: 1rem;
+            border-radius: 1.87rem;
+        
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 70%;
+                    box-shadow: $shadowImages;
+                    border-radius: 9.375rem;
+                    transition: transform 0.5s;
+
+                    &:hover {
+                    transform: scale(1.1);
+                    }
+                }
+            }
+
+            .centertitle {
+                text-align: center;
+            }
+        }
+
+    }
+
+}

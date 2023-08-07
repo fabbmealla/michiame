@@ -1,0 +1,72 @@
+.secciones {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    background-color: $mainPinkColor;
+    padding: 3.1rem 9.38rem ;
+    text-align: center;
+
+    @include mediaquery (1192px) {
+        padding: 2.5rem 6.25rem;
+    }
+
+    @include mediaquery (991px) {
+        flex-direction: column;
+        padding-inline: 2.5rem;
+    }
+
+    @include mediaquery (695px) {
+        padding-inline: 3.75rem;
+    }
+
+    @include mediaquery (474px) {
+        padding-inline: 1.8rem;
+    }
+
+    .secciones_article {
+        width: 100%;
+        padding: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        animation-delay: 3s;
+
+        @include mediaquery (991px) {
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include mediaquery (695px) {
+            flex-direction: column;
+        }
+
+        @include mediaquery (474px) {
+            padding-bottom: 0;
+        }
+
+        .secciones_fotos {
+            width: 100%;
+            border-radius: 1.25rem;
+            box-shadow: $shadowImages;
+        }
+
+        .art1 {
+
+            @include mediaquery (991px) {
+                padding: 1rem;
+                width: 90%;
+            }
+
+            @include mediaquery (695px) {
+                width: 100%;
+            }
+
+            > p {
+                font-size: 90%;
+                padding: 0.5rem;
+            }
+        }
+    }
+}

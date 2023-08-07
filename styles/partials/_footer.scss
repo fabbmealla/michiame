@@ -1,0 +1,51 @@
+.footer {
+    background-color: $footer;
+    background-image: url("../images/cat_background.png");
+    background-size: contain;
+    padding: 1.25rem;
+
+    .footer_info {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+
+        @include mediaquery (695px) { 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .derechos {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .adoptar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .adoptarlist {
+                list-style-type: none;
+                display: flex;
+                gap: 1.5rem;
+                padding-left: 0rem;
+
+                @include mediaquery (695px) { 
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .iconfooter {
+                    color: $titlesBlueColor;
+                }
+            }
+        }
+    }
+
+    .developed p {
+        justify-content: center;
+        text-align: center;
+    }
+}

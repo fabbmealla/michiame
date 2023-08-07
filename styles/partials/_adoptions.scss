@@ -1,0 +1,127 @@
+.contenedor_gatitos {
+    display: grid;
+    width: 100%;
+    padding-top: 2rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "caja1  caja1   caja2   caja7"
+    "caja4  caja5   caja6   caja8"
+    "caja3  caja9   caja10  caja10";
+
+    @include mediaquery (1192px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "caja1  caja1   caja2"
+        "caja7  caja4   caja5"
+        "caja6  caja8   caja3"
+        "caja9  caja10  caja10";
+    }
+
+    @include mediaquery (991px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "caja1  caja1"
+        "caja2  caja7"
+        "caja4  caja5"
+        "caja6  caja8"
+        "caja3  caja9"
+        "caja10 caja10";
+    }
+
+    @include mediaquery (695px) { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedorGen {
+        place-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    
+        .gatis_fotos {
+            width: 100%;
+            border-radius: 1.25rem;
+            box-shadow: $shadowImages;
+        }
+
+        .listas {
+            padding-right: 1.5rem;
+
+            > li {
+                font-weight: 400;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    > article {
+        border: solid 1px $secondaryPinkColor;
+        border-radius: 1.25rem;
+    }
+
+    .contenedor1 {
+        grid-area: caja1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        .imagengatoalto {
+            width: 90%;
+            -webkit-animation:bounce-top 4s infinite alternate-reverse both;
+            animation:bounce-top 4s infinite alternate-reverse both
+        }
+    }
+    
+    .contenedor2 {
+        grid-area: caja2;
+    }
+    
+    .contenedor3 {
+        grid-area: caja3;
+    }
+    
+    .contenedor4 {
+        grid-area: caja4;
+    }
+    
+    .contenedor5 {
+        grid-area: caja5;
+    }
+    
+    .contenedor6 {
+        grid-area: caja6;
+    }
+    
+    .contenedor7 {
+        grid-area: caja7;
+    }
+    
+    .contenedor8 {
+        grid-area: caja8;
+    }
+    
+    .contenedor9 { 
+        grid-area: caja9;
+    }
+    
+    .contenedor10 {
+        grid-area: caja10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imagencontenedor {
+            width: 100%;
+            -webkit-animation:shake-horizontal 8s cubic-bezier(.455,.03,.515,.955) infinite alternate-reverse both;
+            animation:shake-horizontal 8s cubic-bezier(.455,.03,.515,.955) infinite alternate-reverse both
+        }
+    }
+}
+

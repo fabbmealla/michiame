@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michiame</title>
+    <title>Michiame - Contactanos</title>
+    <meta name="description" content="Envianos un mensaje, respondemos a la brevedad.">
+    <meta name="keywords" content="Gatos, Adopciones, Michis, Refugios, Rescate, Gatitos, Colaborar, Cafés">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../images/logo_michiame.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
@@ -29,7 +32,7 @@
                     <a class="nav-link" href="../pages/refugios_de_gatos.html">Refugios de Gatos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/cafes_de_gatos.html">Cafes de Gatos</a>
+                    <a class="nav-link" href="../pages/cafes_de_gatos.html">Cafés de Gatos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="../pages/contactanos.html">Contactanos</a>
@@ -51,19 +54,22 @@
         </div>
         <br>
         <div class="curioso">
-          <img src="../images/curioso.png" alt="">
+          <img src="../images/curioso.png" alt="curioso">
         </div>
         <form class="formulario container">
-            <div class="mb-3">
+          <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Nombre y Apellido</label>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribir aquí">
           </div>
           <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribir aquí">
+            <label for="formGroupExampleInput3" class="form-label">Teléfono</label>
+            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Escribir aquí">
           </div>
           <div class="mb-3">
-            <label for="opcion" class="form-label">
+            <label for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribir aquí">
+          <div class="mb-3">
+            <label for="opcion" class="form-label motivo">
                 Motivo de tu consulta 
                 <select class="form-select" aria-label="Default select example">
                     <option selected disabled >Seleccioná una opción</option>
@@ -80,7 +86,7 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3 secciones_boton">Enviar formulario</button>
+            <button type="submit" class="btn btn-primary mb-3 primaryBoton">Enviar formulario</button>
           </div>
         </form>
     </main>
@@ -114,5 +120,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 </body>
 </html>

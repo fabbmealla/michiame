@@ -1,0 +1,24 @@
+.mains {
+    margin-inline: 1.25rem; 
+    padding: 4.38rem 5.63rem 2.5rem 5.63rem;    
+    
+    @include mediaquery (695px) {
+        padding: 4.37rem 3rem 2.5rem 3rem;
+    }
+
+    @include mediaquery (474px) {
+        padding: 4.38rem 1.25rem 2.5rem 1.25rem;
+    }
+
+    .mainpages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-animation:puff-in-center 1s cubic-bezier(.47,0.000,.745,.715) both;
+        animation:puff-in-center 1s cubic-bezier(.47,0.000,.745,.715) both;
+    }
+    
+}
+

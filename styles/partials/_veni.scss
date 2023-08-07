@@ -1,0 +1,54 @@
+.veni {
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ".  prueba1   prueba2";
+
+    @include mediaquery (991px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "prueba1   prueba2";
+    }
+
+    @include mediaquery (474px) {
+        margin-top: 0.5rem;
+        gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "prueba1"
+        "prueba2";
+    }
+
+    .veni1 {
+        grid-area: prueba1;
+        place-items: center;
+        align-items: center;
+    }
+
+    .veni2 {
+        grid-area: prueba2;
+        width: 100%;
+    }
+
+    p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: $titlesBlueColor;
+
+        @include mediaquery (1192px) {
+            font-size: 1.2rem;
+        }
+
+        @include mediaquery (991px) {
+            font-size: 1rem;
+        }
+    }
+}

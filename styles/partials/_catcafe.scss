@@ -1,0 +1,59 @@
+.cafes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .cafesdegatos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+        width: 100%;
+        border: solid 1px $secondaryPinkColor;
+        border-radius: 1.87rem;
+        margin: 1rem;
+
+        @include mediaquery (991px) {
+            flex-direction: column-reverse;
+            gap: 1rem;
+        }
+
+        .fotoscafes {
+
+            img {
+                width: 100%;
+                border-radius: 1.87rem;
+                box-shadow: $shadowImages;
+            }
+        }
+
+        .textocafes {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            padding: 1rem;
+            justify-content: center;
+
+            @include mediaquery (991px) {
+                width: 90%;
+                padding: 0.5rem;
+            }
+
+            > ul {
+                font-weight: 400;
+                font-size: 1rem;
+
+                li {
+                    
+                    a {
+                        text-decoration: none;
+                        color: $titlesBlueColor;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

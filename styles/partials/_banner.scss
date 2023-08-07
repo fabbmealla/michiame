@@ -1,0 +1,103 @@
+.bann {
+    background-color:$mainPinkColor;
+    display: flex;
+    height: 100vh;
+
+    .banner { 
+        background-image: url("../images/fondo2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 6.25rem;
+        padding-left: 5.62rem;
+        -webkit-animation:puff-in-center 1s cubic-bezier(.47,0.000,.745,.715) both;
+        animation:puff-in-center 1s cubic-bezier(.47,0.000,.745,.715) both;
+
+        @include mediaquery (991px) {
+            height: 70vh;
+            background-position: bottom;
+            padding-top: 5rem;
+        }
+
+        @include mediaquery (695px) {
+            height: 65vh;
+            background-image: url("../images/fondo1.png");
+            padding-left: 1.87rem;
+            padding-top: 4.38rem;
+            justify-content: left;
+            background-position: bottom;
+        }
+
+        @include mediaquery (474px) {
+            height: 60vh;
+            background-position: bottom;
+        }
+
+        .bannerdiv {
+            display: flex;
+            flex-direction: column;
+            font-size: 120%;
+            text-align: justify;
+            width: 50%;
+
+            @include mediaquery (1192px) {
+                width: 45%;
+            }
+
+            @include mediaquery (991px) {
+                width: 48%;
+            }
+
+            @include mediaquery (695px) {
+                width: 70%;
+            }
+
+            @include mediaquery (474px) {
+                width: 80%;
+            }
+
+            .ban1 {
+                width: 100%;
+    
+                .gatobanner {
+                    width: 100%;
+                }
+            }
+
+            .ban2 {
+                padding-left: 1.25rem;
+                animation: animit 1.6s;
+                animation-direction: reverse;
+
+                @include mediaquery (1192px) {
+                    width: 100%;
+                }
+
+                @include mediaquery (991px) {
+                    padding-left: 1rem;
+                }
+
+                @include mediaquery (695px) {
+                    padding-left: 0.6rem;
+                    width: 70%;
+                }
+
+                @include mediaquery (474px) {
+                    padding-left: 0.6rem;
+                    width: 80%;
+                }
+            }
+
+            p {
+                @include mediaquery (695px) {
+                    font-size: 90%;
+                }
+
+                @include mediaquery (474px) {
+                    font-size: 70%;
+                }
+            }
+        }
+    }
+}
+

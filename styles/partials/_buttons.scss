@@ -1,0 +1,28 @@
+.primaryBoton {
+    background-color: $secondaryPinkColor;
+    padding: 0.6rem;
+    border-radius: 1.25rem;
+    border-style: groove;
+    border-color: $buttonPurple;
+    margin-inline: 4rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+        background-color: $titlesBlueColor;
+        color: $buttonHover;
+        border-color: $buttonPurple;
+        transition: all 1s;
+        transform: scale(1.2);
+    }
+
+    .verMas {
+        color: $buttonPurple;
+        text-decoration: none;
+        font-weight: 400;
+        margin: 0.5rem;
+
+        &:hover {
+            color:$buttonHover;
+        }
+    }
+}

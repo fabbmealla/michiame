@@ -1,0 +1,42 @@
+.quienes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    @include mediaquery (695px) {
+        flex-direction: column-reverse;
+    }
+
+    .quienesSomos {
+        width: 30%;
+        padding: 0.6rem; 
+
+        @include mediaquery (1192px) {
+            width: 35%;
+        }
+
+        @include mediaquery (991px) {
+            width: 43%;
+        }
+
+        @include mediaquery (695px) {
+            width: 70%;
+        }
+
+        @include mediaquery (474px) {
+            width: 85%;
+        }
+
+        .quienes_imagen {
+            width: 100%;
+            border-radius: 1.25rem;
+            box-shadow: $shadowImages;
+        }
+
+        > p { 
+            padding: 0.3rem;
+        }
+    }
+}

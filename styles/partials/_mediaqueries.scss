@@ -1,0 +1,5 @@
+@mixin mediaquery($ancho) {
+    @media screen and (max-width: #{$ancho}) {
+        @content;
+    }
+}
