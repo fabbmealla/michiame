@@ -67,11 +67,8 @@
 
     .contenedor1 {
         grid-area: caja1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-
+        @include flex-center;
+    
         .imagengatoalto {
             width: 90%;
             -webkit-animation:bounce-top 4s infinite alternate-reverse both;
@@ -113,9 +110,7 @@
     
     .contenedor10 {
         grid-area: caja10;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
 
         .imagencontenedor {
             width: 100%;

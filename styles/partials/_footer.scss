@@ -21,10 +21,8 @@
         }
 
         .adoptar {
-            display: flex;
+            @include flex-center;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
 
             .adoptarlist {
                 list-style-type: none;

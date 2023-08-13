@@ -33,9 +33,7 @@
 
         @include mediaquery (991px) {
             flex-direction: row;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
         }
 
         @include mediaquery (695px) {

@@ -1,13 +1,9 @@
 .cafes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     flex-direction: column;
 
     .cafesdegatos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         gap: 2rem;
         padding: 1rem;
         width: 100%;

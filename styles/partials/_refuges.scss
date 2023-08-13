@@ -82,9 +82,7 @@
             border-radius: 1.87rem;
         
             a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-center;
 
                 img {
                     width: 70%;

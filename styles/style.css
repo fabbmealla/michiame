@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Federant&family=Raleway:wght@200;300;400;500;600;700&display=swap");
 @keyframes animit {
   100% {
-    font-size: 0.01rem;
+    transform: scale(0.1);
   }
 }
 @keyframes puff-in-center {
@@ -235,9 +235,9 @@ p {
 }
 .mains .mainpages {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
   animation: puff-in-center 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
@@ -516,8 +516,6 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
 @media screen and (max-width: 991px) {
   .fest {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 1rem;
     padding: 1rem;
     gap: 2rem;
@@ -588,9 +586,9 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
 }
 .footer .footer_info .adoptar {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .footer .footer_info .adoptar .adoptarlist {
   list-style-type: none;
@@ -667,8 +665,8 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
 .contenedor_gatitos .contenedor1 {
   grid-area: caja1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .contenedor_gatitos .contenedor1 .imagengatoalto {
   width: 90%;
@@ -701,8 +699,8 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
 .contenedor_gatitos .contenedor10 {
   grid-area: caja10;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .contenedor_gatitos .contenedor10 .imagencontenedor {
   width: 100%;
@@ -711,17 +709,17 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
 
 .adoptados {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .adoptados .adoptados2 {
-  gap: 1rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
   padding-bottom: 2rem;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 .adoptados .adoptados2 > img {
@@ -887,14 +885,14 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
 
 .cafes {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .cafes .cafesdegatos {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   padding: 1rem;
   width: 100%;
@@ -938,9 +936,9 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
 
 .curioso {
   display: flex;
-  width: 100%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .curioso img {
   width: 40%;

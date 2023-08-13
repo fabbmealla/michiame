@@ -11,10 +11,8 @@
     }
 
     .mainpages {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     -webkit-animation:puff-in-center 1s cubic-bezier(.47,0.000,.745,.715) both;
         animation:puff-in-center 1s cubic-bezier(.47,0.000,.745,.715) both;
